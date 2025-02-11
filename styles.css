@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffebee;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+.gif {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.yes-button,
+.no-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.yes-button {
+  background-color: #4caf50;
+  color: white;
+}
+.no-button {
+  background-color: #f44336;
+  color: white;
+}
+.yes-button:hover {
+  background-color: #388e3c;
+}
+.no-button:hover {
+  background-color: #d32f2f;
+}
+.hidden {
+  display: none;
+}
+.confetti {
+  width: 300px;
+  height: auto;
+}
+.kissing-bears {
+  width: 250px;
+  height: auto;
+}
+.final-text {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  margin-top: 20px;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1000px);
+  }
+}
+.heart {
+  position: absolute;
+  font-size: 2em;
+  color: red;
+  animation: floatUp 10s ease-out forwards;
+}

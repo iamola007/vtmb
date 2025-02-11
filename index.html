@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Will You Be My Valentine?</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+        alt="Romantic GIF"
+        class="gif"
+        id="romanticGif"
+      />
+      <h1 id="question">Will you be my valentine?</h1>
+      <div class="buttons">
+        <button
+          class="yes-button"
+          id="yesButton"
+          onclick="celebrate(), showHearts()"
+        >
+          YES
+        </button>
+        <button class="no-button" id="noButton">NO</button>
+      </div>
+      <div id="finalContent" class="hidden">
+        <p class="final-text">
+          Yayyy! Finally! So why did it take you that long?! Your YES just
+          unlocked VIP access to my heart! No refunds, no exchanges - just pure
+          love!
+        </p>
+        <p id="message" class="final-text"></p>
+        <p>
+          Valentine’s Day Countdown:
+          <span id="countdown"></span>
+        </p>
+      </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source
+        src="./Elvis_Presley_-_-_Cant_Help_Falling_In_Love.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
